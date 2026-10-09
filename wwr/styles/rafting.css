@@ -1,3 +1,5 @@
+/* rafting.css - my site css - Jinja White Water Rafting - by Musumba Marvin - W06 final */
+
 header {
   display: grid;
   grid-template-columns: 100px 1fr;
@@ -30,25 +32,28 @@ header nav a {
   display: block;
 }
 
+/* hero - this one works for about page and home page both */
 .hero {
-  position: relative
+  position: relative;
 }
 
 .hero > img {
   width: 100%;
   height: 400px;
   object-fit: cover;
-  display: block
+  display: block;
 }
 
 .hero h1 {
   position: absolute;
   top: 20px;
+  left: 0;
   width: 100%;
   text-align: center;
   background: rgba(0, 0, 0, 0.6);
   color: white;
-  padding: 15px
+  padding: 15px;
+  box-sizing: border-box;
 }
 
 .hero article {
@@ -61,71 +66,76 @@ header nav a {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  gap: 15px
+  gap: 15px;
+  box-sizing: border-box;
 }
 
 .hero article img {
-  width: 130px
+  width: 130px;
+  height: auto;
 }
 
+/* history and adventure - W04 */
 .history,
 .adventure {
-  padding: 20px
+  padding: 20px;
 }
 
 .history-grid {
   display: grid;
   grid-template-columns: 1fr 200px 1fr;
   gap: 20px;
-  align-items: center
+  align-items: center;
 }
 
 .history-grid img,
 .adventure-grid img {
-  width: 100%
+  width: 100%;
 }
 
 .adventure-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 15px
+  gap: 15px;
 }
 
 .adventure-grid img {
   height: 110px;
-  object-fit: cover
+  object-fit: cover;
 }
 
+/* footer - I fixed big icons bug last time */
 footer {
-  display: grid;
-  grid-template-columns: 1fr 150px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  background: #0a369d;
+  padding: 15px;
+  background-color: #0b3d91;
   color: white;
-  padding: 15px
 }
 
-.sociallinks {
-  display: flex;
-  gap: 10px;
-  justify-content: flex-end
+footer img {
+  width: 30px;
+  height: 30px;
 }
 
 .sociallinks img {
-  width: 30px
+  width: 30px;
 }
 
-/* W05 Contact Us Styles */
+/* W05 Contact Us - side by side for wireframe */
 .contact-grid {
-  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
   max-width: 1000px;
   margin: 0 auto;
+  align-items: start;
 }
 
 .company-info,
-.employees,
 .contact-form {
-  margin-bottom: 2rem;
   background: #f9f9f9;
   padding: 1rem;
   border-radius: 8px;
@@ -135,6 +145,22 @@ footer {
   width: 100%;
   max-width: 400px;
   border: 0;
+}
+
+/* employees - 3 columns team */
+.employees {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.employees img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .employee-profiles {
@@ -156,23 +182,56 @@ footer {
   border-radius: 8px;
 }
 
+/* contact form - this was broken in your screenshot, I fixed it now */
+.form-section {
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.form-section label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.form-section fieldset {
+  margin-top: 15px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.form-section fieldset label {
+  font-weight: normal;
+  margin: 5px 0;
+}
+
+.form-section input[type="text"],
+.form-section input[type="email"],
+.form-section textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-section textarea {
+  height: 100px;
+}
+
 .contact-form form {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 100%;
-  max-width: 400px;
-}
-
-.contact-form button {
+.contact-form button,
+.form-section button {
   background-color: #1a4d8f;
   color: white;
   padding: 0.7rem;
@@ -183,6 +242,64 @@ footer {
   margin-top: 1rem;
 }
 
-.contact-form button:hover {
+.contact-form button:hover,
+.form-section button:hover {
   background-color: #0d2c54;
+}
+
+/* my W06 - home page and trips page - I added this week myself */
+.my-news, .my-cta{
+  background: #eee;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+.my-cta a{
+  display: inline-block;
+  background: #0a369d;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+.home-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+.home-grid img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.trips-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  padding: 20px;
+}
+.trip-box{
+  border: 1px solid #999;
+  padding: 10px;
+  background: white;
+}
+.trip-box img{
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+table{
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+th,td{
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+th{
+  background: #0a369d;
+  color: white;
 }

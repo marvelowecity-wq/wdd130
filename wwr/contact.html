@@ -1,98 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en-US">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - Jinja White Water Rafting</title>
-  <link rel="stylesheet" href="styles/rafting.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Jinja White Water Rafting</title>
+    <meta name="description" content="Contact Jinja White Water Rafting for booking and questions. Find us in Jinja Uganda.">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
-
 <body>
-  <header>
-    <img src="images/logo.png" alt="Jinja Rafting Logo">
+<header>
+    <img src="images/logo.png" alt="Jinja rafting logo">
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="trips.html">Trips</a>
-      <a href="contact.html">Contact Us</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="trips.html">Trips</a>
+        <a href="contact.html">Contact Us</a>
     </nav>
-  </header>
+</header>
 
-  <main>
+<main>
+    <h1>Contact Jinja White Water Rafting</h1>
 
-    <h1>Contact Us</h1>
     <div class="contact-grid">
-      <section class="company-info">
-        <h2>Company Information</h2>
-        <p><strong>Address:</strong> Jinja White Water Rafting, Nile Crescent, Jinja, Uganda</p>
-        <p><strong>Phone:</strong> +256 772 123 456 | +256 702 987 654</p>
-        <p><strong>Email:</strong> info@jinjarafting.ug</p>
-        <div class="map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.753002985!2d33.203!3d0.424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177e7b%3A0x123!2sSource%20of%20the%20Nile%2C%20Jinja!5e0!3m2!1sen!2sus!4v1700000000000"
-            width="400" height="300" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="company-info">
+            <h2>Our Info</h2>
+            <p>Address: Jinja Nile River, Uganda</p>
+            <p>Phone: +256 700 123456</p>
+            <p>Email: info@jinjarafting.ug</p>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.753!2d33.2!3d0.4!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMjQnMDAuMCJOIDMzwrAxMicwMC4wIkU!5e0!3m2!1sen!2sug!4v123456" width="300" height="200" allowfullscreen loading="lazy"></iframe>
+            </div>
         </div>
-      </section>
 
-      <section class="employees">
-        <h2>Meet Our Team</h2>
-        <div class="employee-profiles">
-          <figure>
-            <img src="images/profile.jpg" alt="Musumba Marvin - Lead Guide">
-            <figcaption>Musumba Marvin - Lead Guide</figcaption>
-          </figure>
-          <figure>
-            <img src="images/sarah.jpg" alt="Sarah Namu - Reservation Manager">
-            <figcaption>Sarah Namu - Reservation Manager</figcaption>
-          </figure>
-          <figure>
-            <img src="images/john.jpg" alt="John Okello - Safety Officer">
-            <figcaption>John Okello - Safety Officer</figcaption>
-          </figure>
+        <div class="employees">
+            <figure>
+                <img src="images/profile.jpg" alt="Musumba Marvin">
+                <figcaption>Musumba Marvin - Lead Guide</figcaption>
+            </figure>
+            <figure>
+                <img src="images/sarah.jpg" alt="Sarah Nami">
+                <figcaption>Sarah Nami - Reservation Manager</figcaption>
+            </figure>
+            <figure>
+                <img src="images/john.jpg" alt="John Okello">
+                <figcaption>John Okello - Safety Officer</figcaption>
+            </figure>
         </div>
-      </section>
+    </div>
 
-      <section class="contact-form">
+    <!-- this form was broken in your photo, now fixed -->
+    <section class="form-section">
         <h2>Send Us a Message</h2>
         <form>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
+            <label for="username">Name:</label>
+            <input type="text" id="username" name="username" required>
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
+            <label for="useremail">Email:</label>
+            <input type="email" id="useremail" name="useremail" required>
 
-          <p>Purpose of Message:</p>
-          <div class="radio-group">
-            <label for="general"><input type="radio" id="general" name="purpose" value="general"
-                required> General Inquiry</label>
-            <label for="reservation"><input type="radio" id="reservation" name="purpose"
-                value="reservation"> Reservation Question</label>
-            <label for="suggestion"><input type="radio" id="suggestion" name="purpose"
-                value="suggestion"> Website Suggestion</label>
-          </div>
+            <fieldset>
+                <legend>Purpose of Message:</legend>
+                <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+                <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+                <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
+            </fieldset>
 
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
+            <label for="usermessage">Message:</label>
+            <textarea id="usermessage" name="usermessage" rows="5" required></textarea>
 
-          <label for="subscribe"><input type="checkbox" id="subscribe" name="subscribe"> Please
-            subscribe me to the monthly newsletter</label>
+            <label>
+                <input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter
+            </label>
 
-          <button type="submit">Send Message</button>
+            <button type="submit">Send Message</button>
         </form>
-      </section>
-    </div>
-  </main>
+    </section>
+</main>
 
-  <footer>
-    <p>©2026 Jinja White Water Rafting | Musumba Marvin</p>
+<footer>
+    <p>&copy; 2026 Jinja White Water Rafting | Musumba Marvin</p>
     <nav class="sociallinks">
-      <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
-      <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
-      <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
+        <a href="https://facebook.com"><img src="images/facebook.svg" alt="facebook"></a>
+        <a href="https://twitter.com"><img src="images/twitter.svg" alt="twitter"></a>
+        <a href="https://instagram.com"><img src="images/instagram.svg" alt="instagram"></a>
     </nav>
-  </footer>
+</footer>
 </body>
-
 </html>
